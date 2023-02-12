@@ -24,7 +24,7 @@ class Mapa {
         alert.bind(this, "error getting location")
       );
     }
-    setTimeout(this._createNewMarkerFirst.bind(this), 500);
+    
 
     setInterval(
       function () {
@@ -108,6 +108,7 @@ class Mapa {
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {}).addTo(
       this._map
     );
+    setTimeout(this._createNewMarkerFirst.bind(this), 2000);
 
     this._map.on("click", this._mapOnClick.bind(this));
   }
