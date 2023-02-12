@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/zeroStyle.css" />
+    <link rel="stylesheet" href="css/modalWindow.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div id="modal-window" class="modal-window">
+      <div id="modal-window__block-blur" class="modal-window__block-blur"></div>
+      <!-- zero element  -->
+      <div id="modal-window-create-marker" class="modal-window__block">
+        <div class="main">
+          <label for="name-marker" class="modal-window__title"
+            >What label name will you choose?</label
+          >
+          <input
+            type="text"
+            name="name-marker"
+            id="name-marker"
+            value=""
+            class="modal-window__input"
+          />
+        </div>
+      </div>
+      <!-- first element  -->
+      <div id="modal-window-remove-marker" class="modal-window__block">
+        <div id="" class="main">
+          <label class="modal-window__title">Delete?</label>
+          <input
+            type="submit"
+            name=""
+            value="Yes"
+            id="delete-marker"
+            class="modal-window__input"
+          />
+        </div>
+      </div>
+      <!--||||||||||||||||| don't touch image modal block |||||||||||||||||-->
+      <div class="modal-window__block modal-window__block-img">
+        <div class="modal-window__block-img-w"></div>
+        <img class="modal-window-img" src="" alt="" />
+      </div>
+      <!--||||||||||||||||| don't touch image modal block |||||||||||||||||-->
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <script src="js/modalWindow.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

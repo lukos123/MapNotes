@@ -1,0 +1,67 @@
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-popup-content-wrapper {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.marker-you {
+  width: 32px;
+  height: 32px;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+
+.leaflet-popup-content {
+  word-wrap: break-word;
+}
+
+.modal-window #modal-window-create-marker {
+  width: auto;
+  padding: 0 50px;
+}
+.modal-window #modal-window-create-marker .main {
+  display: flex;
+  flex-direction: column;
+}
+.modal-window #modal-window-create-marker .main .modal-window__input {
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .modal-window #modal-window-create-marker .main .modal-window__input {
+    height: 60px;
+    border-radius: 20px;
+  }
+}
+.modal-window #modal-window-remove-marker {
+  width: auto;
+  padding: 0 50px;
+}
+.modal-window #modal-window-remove-marker .main {
+  display: flex;
+  flex-direction: column;
+}
+.modal-window #modal-window-remove-marker .main .modal-window__input {
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .modal-window #modal-window-remove-marker .main .modal-window__input {
+    height: 60px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .leaflet-popup-close-button span {
+    font-size: 25px;
+  }
+}
